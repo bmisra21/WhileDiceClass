@@ -9,17 +9,17 @@ public class WhileDiceMain {
 		WhileDice dice2 = new WhileDice();
 		
 		int numRolls = 0;
-		int roll1=1;
-		int roll2=2;
+		int roll1=0;
+		int roll2=0;
 		
-		while (roll1 != roll2 )
+		do
 		{
 			roll1 = dice1.roll();
 			roll2 = dice2.roll();
 			int sum1 = roll1 + roll2;
 			System.out.println(roll1 + "+" + roll2 + "=" + sum1);
 			++numRolls;
-		}
+		} while (roll1 != roll2 );
 		System.out.println("Roll val:  " + roll1 + "\nSum of Rolls: " + (roll1 + roll2) + "\nNum rolls taken: " + numRolls);
 
 		/*
@@ -30,9 +30,10 @@ public class WhileDiceMain {
 		int targetVal=0;
 		int counter = 0;
 		int sum=0;
+		System.out.print("Enter a number between 2 and 12: ");
 		while (targetVal < 2 || targetVal >12) 
 		{
-			System.out.print("Enter a number between 2 and 12: ");
+			System.out.print("Try again: ");
 			targetVal = in.nextInt();
 			
 		}
@@ -49,4 +50,5 @@ public class WhileDiceMain {
 	}
 
 }
+
 
