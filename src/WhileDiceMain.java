@@ -9,17 +9,24 @@ public class WhileDiceMain {
 		WhileDice dice2 = new WhileDice();
 		
 		int numRolls = 0;
-		int  roll1=1;
+		int roll1=1;
 		int roll2=2;
 		
 		while (roll1 != roll2 )
 		{
 			roll1 = dice1.roll();
 			roll2 = dice2.roll();
+			int sum1 = roll1 + roll2;
+			System.out.println(roll1 + "+" + roll2 + "=" + sum1);
 			++numRolls;
 		}
 		System.out.println("Roll val:  " + roll1 + "\nSum of Rolls: " + (roll1 + roll2) + "\nNum rolls taken: " + numRolls);
 
+		/*
+		Scanner in = new Scanner(System.in);
+		WhileDice dice1 = new WhileDice();
+		WhileDice dice2 = new WhileDice();
+		
 		int targetVal=0;
 		int counter = 0;
 		int sum=0;
@@ -37,8 +44,9 @@ public class WhileDiceMain {
 			++counter;
 			System.out.println(dice1Val + "+" + dice2Val + "=" + sum);
 		}
-		System.out.println("Rolls taken to get value: " + counter);
+		System.out.println("Rolls taken to get value: " + counter);*/
 		
 	}
 
 }
+
