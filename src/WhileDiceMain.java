@@ -1,9 +1,14 @@
+/**
+@author bmisra21
+Dice Doubles and Dice Sum Projects
+**/
 import java.util.Scanner;
 
 public class WhileDiceMain {
-
+	
 	public static void main(String[] args) 
 	{
+		//Dice Doubles
 		Scanner in = new Scanner(System.in);
 		WhileDice dice1 = new WhileDice();
 		WhileDice dice2 = new WhileDice();
@@ -21,8 +26,10 @@ public class WhileDiceMain {
 			++numRolls;
 		} while (roll1 != roll2 );
 		System.out.println("Roll val:  " + roll1 + "\nSum of Rolls: " + (roll1 + roll2) + "\nNum rolls taken: " + numRolls);
-
-		/*
+		
+		//===================================================================================================================
+		
+		//Dice Sum
 		Scanner in = new Scanner(System.in);
 		WhileDice dice1 = new WhileDice();
 		WhileDice dice2 = new WhileDice();
@@ -45,7 +52,7 @@ public class WhileDiceMain {
 			++counter;
 			System.out.println(dice1Val + "+" + dice2Val + "=" + sum);
 		}
-		System.out.println("Rolls taken to get value: " + counter);*/
+		System.out.println("Rolls taken to get value: " + counter);
 		
 	}
 
